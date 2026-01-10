@@ -1,0 +1,106 @@
+:root {
+  --bg-main: #0d0d0d;
+  --bg-secondary: #161616;
+  --bg-card: #1f1f1f;
+
+  --primary: #e5e5e5;
+  --accent: #6b7280;
+
+  --text-main: #f9fafb;
+  --text-muted: #9ca3af;
+}
+
+/* ================================================= */
+/* GLOBAL */
+body {
+  font-family: "Exo", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* ================================================= */
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  background: rgba(13, 13, 13, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+/* LOGO */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: var(--primary);
+  transition: width 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ================================================= */
+/* BUTTON CV */
+.btn-cv {
+  padding: 10px 25px;
+  border-radius: 30px;
+  background: var(--primary);
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.btn-cv:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(229, 229, 229, 0.4);
+}
+
+/* ================================================= */
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .header {
+    padding: 0 30px;
+  }
+}
