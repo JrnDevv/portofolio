@@ -298,36 +298,7 @@ main {
   margin-bottom: 12px;
   position: relative;
   width: 100px;
-  height: 100px;
-
-  
-}
-
-.hero-avatar-circle {
-  position: absolute;
-  inset: 0;
-  border-radius: 100%;
-  background: linear-gradient(145deg, #22c55e, #a855f7, #0ea5e9);
-  padding: 5px; /* borda do degradê */
-
-}
-
-.hero-avatar img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10%;
-  position: relative;
-  z-index: 10; /* garante ficar na frente */
-
-
-}
-
-.hero-avatar-circle::after {
-  content: "";
-  position: absolute;
-  inset: 3px;
-  border-radius: 26px;
-  background: radial-gradient(circle at top, #020617 0, #020617 60%);
+  height: 100px;  
 }
 
 .hero-card-body {
