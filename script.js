@@ -1,3 +1,81 @@
+// animaçõa de digitação no hero
+  const elementoTexto = document.querySelector("#typing");
+const frases = [
+  "Olá, eu sou o Gabriel Souza.",
+  "Desenvolvedor Full Stack.",
+  "Criador de Soluções Digitais.",]
+
+  let frasesIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  //velocidade de digitação
+  const typeSpeed = 100;
+  const deleteSpeed = 50;
+  const pauseAfterType = 1200;
+  const pauseAfterDelete = 300;
+
+  function animarDigitacao () {
+    const currentFrase = frases[frasesIndex]
+
+    if (!isDeleting) {
+      charIndex++;
+      elementoTexto.textContent = currentFrase.slice(0, charIndex);
+  } else {
+    charIndex--;
+    elementoTexto.textContent = currentFrase.slice(0, charIndex);
+  }
+
+  let time = isDeleting ? deleteSpeed : typeSpeed;
+
+  if (!isDeleting && charIndex === currentFrase.length) {
+    time = pauseAfterType
+    isDeleting = true;
+  }
+
+  if (isDeleting && charIndex === 0) {
+    time = pauseAfterDelete;
+    isDeleting = false;
+    frasesIndex = (frasesIndex + 1) % frases.length;
+  }
+
+  setTimeout(animarDigitacao, time);
+  }
+
+  animarDigitacao();
+
+// Scroll reveal (cards animando ao rolar)
+const revealItems = document.querySelectorAll(
+  ".about-card, .skills-group, .project-card, .contact-form, .contact-info, .hero-card-body"
+);
+
+revealItems.forEach(el => el.classList.add("reveal"));
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      io.unobserve(entry.target); // anima uma vez (mais profissional)
+    }
+  });
+}, { threshold: 0.12 });
+
+revealItems.forEach(el => io.observe(el));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // NAV MOBILE
 const navToggle = document.getElementById("nav-toggle");
 const nav = document.getElementById("nav");
