@@ -1,364 +1,352 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vértice Advocacia | Estratégia, segurança e resultado</title>
-  <meta name="description" content="Assessoria jurídica com foco em resultado. Atendimento ágil, transparente e humano. Fale com um advogado agora." />
+  <meta charset="UTF-8" />
+  <title>Gabriel Souza | Desenvolvedor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio profissional de Gabriel Souza, desenvolvedor web. Projetos, habilidades e contato." />
+
+  <!-- Fonte Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#home" class="nav-link active">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
 
-  <!-- Header -->
-  <header class="header" id="home">
-    <nav class="nav container">
-      <!-- Sem logo: apenas nome -->
-      <a class="brand" href="#home" aria-label="Ir para o início">
-        <span class="brand__name">Vértice Advocacia</span>
-      </a>
-
-      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-controls="nav"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+    </div>
+  </header>
+  
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Desenvolvedor Back-End</p>
+          <h1>Transformando ideias em soluções robustas.</h1>
+          <p class="hero-subtitle">
+            Crio APIs e sistemas server-side com foco em desempenho, organização do código e arquitetura bem estruturada.
+          </p>
 
-      <ul class="nav__links" id="navLinks">
-        <li><a href="#home" class="nav__link">Home</a></li>
-        <li><a href="#sobre" class="nav__link">Sobre</a></li>
-        <li><a href="#servicos" class="nav__link">Serviços</a></li>
-        <li><a href="#duvidas" class="nav__link">Dúvidas</a></li>
-        <li><a href="#contato" class="nav__link nav__cta">Contato</a></li>
-      </ul>
-    </nav>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">Ver projetos</a>
+            <a href="#contact" class="btn ghost">Entrar em contato</a>
 
-    <!-- Hero -->
-    <section class="hero container reveal">
-      <div class="hero__content">
-        <p class="eyebrow">Atendimento rápido • Transparência • Estratégia</p>
-        <h1>Seu caso merece estratégia, clareza e ação do primeiro contato ao resultado.</h1>
-        <p class="lead">
-          Na <strong>Vértice Advocacia</strong>, você fala com profissionais que explicam o caminho,
-          assumem a responsabilidade e conduzem seu processo com foco em proteção e solução.
-        </p>
-
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#contato">Agendar avaliação</a>
-          <a class="btn btn--ghost" href="#servicos">Ver áreas de atuação</a>
-        </div>
-
-        <div class="hero__trust">
-          <div class="trust__item">
-            <strong>Atendimento ágil</strong>
-            <span>resposta com direcionamento</span>
+            <!-- troque o href pelo caminho real do seu PDF -->
+            <a href="assets/cv-gabriel-souza.pdf" class="btn secondary full-width" download>
+              Download CV (PDF)
+            </a>
           </div>
-          <div class="trust__item">
-            <strong>Sem juridiquês</strong>
-            <span>clareza em cada etapa</span>
-          </div>
-          <div class="trust__item">
-            <strong>Estratégia</strong>
-            <span>decisões com segurança</span>
+
+          <div class="hero-infos">
+            <div>
+              <span class="hero-label">Stack principal</span>
+              <span class="hero-value">HTML • CSS • JavaScript • Node.js</span>
+            </div>
+            <div>
+              <span class="hero-label">Disponível para</span>
+              <span class="hero-value">Estágio remoto / Desenvolvedor Jr</span>
+            </div>
           </div>
         </div>
+
+      <div class="hero-card-body">
+  <div class="ai-bar" role="search" aria-label="Busca no portfólio">
+    <i data-lucide="search" class="ai-icon"></i>
+
+    <div class="ai-content">
+      <div class="ai-top">
+        <span class="ai-label">Pesquisar</span>
+        <span class="ai-kbd">Ctrl K</span>
       </div>
 
-      <div class="hero__card">
-        <div class="card">
-          <h3>O que você recebe</h3>
-          <ul class="checklist">
-            <li>Diagnóstico objetivo do seu cenário</li>
-            <li>Plano de ação com prazos e riscos claros</li>
-            <li>Comunicação constante e documentação organizada</li>
-            <li>Atendimento online e presencial sob agenda</li>
-          </ul>
+      <div class="ai-input">
+        <span class="ai-placeholder">Pesquisar: projetos, skills, contato…</span>
+      </div>
+    </div>
+  </div>
 
-          <div class="card__note">
-            <p><strong>Precisa de urgência?</strong> Clique no WhatsApp e receba orientação inicial.</p>
-          </div>
+  <div class="ai-result">
+    <span class="ai-dot"></span>
+    <span id="typing"></span><span class="cursor">|</span>
+  </div>
 
-          <a class="btn btn--secondary btn--full" href="#contato">Falar com um advogado</a>
+  <div class="ai-suggestions">
+    <button class="chip" type="button">Ver projetos</button>
+    <button class="chip" type="button">Stack</button>
+    <button class="chip" type="button">Contato</button>
+  </div>
+</div>
+ </div>
+  </div>
+  </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="about">
+      <div class="container section-content about">
+        <div class="section-header">
+          <span class="section-eyebrow">Sobre mim</span>
+          <h2>Quem é o Gabriel por trás do código?</h2>
+          <p>
+            Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e desenvolvimento web.
+            Gosto de transformar conceitos em soluções reais, com código limpo, organizado e focado em resultado.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>O que eu faço</h3>
+            <p>
+              Desenvolvimento de interfaces modernas, responsivas e bem estruturadas, conectando front-end com APIs e
+              boas práticas de UX.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h3>Como trabalho</h3>
+            <p>
+              Código versionado no GitHub, organização em Kanban, commits claros e foco em entregas constantes e de qualidade.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h3>Objetivo</h3>
+            <p>
+              Conquistar uma vaga de estágio remoto e evoluir até desenvolvedor pleno, construindo produtos digitais que façam diferença.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h3>Diferenciais</h3>
+            <p>
+              Boa comunicação, aprendizado rápido, vontade de resolver problemas e mente focada em melhoria contínua.
+            </p>
+          </article>
         </div>
       </div>
     </section>
-  </header>
 
-  <!-- Sobre -->
-   <div id="title-about"">
-    <h2>Compromisso com o que importa: sua segurança jurídica.</h2>
-        <p class="muted">
-          Atuamos com abordagem prática: entender rapidamente o problema, definir <br> uma estratégia e executar com consistência.
-          Você recebe orientação clara e acompanhamento do início ao fim sem surpresas.
-        </p>
+    <!-- HABILIDADES -->
+    <section class="section" id="skills">
+      <div class="container section-content">
+        <div class="section-header center">
+          <span class="section-eyebrow">Habilidades</span>
+          <h2>Minha stack e conhecimentos</h2>
+          <p>Tecnologias e ferramentas que uso no desenvolvimento web.</p>
         </div>
-  <section class="section" id="sobre">
-    <div class="container grid-2">
-      <div class="reveal about-head">
-       
 
-        <div class="highlights">
-          <div class="highlight reveal">
-            <h4>Atendimento consultivo</h4>
-            <p>Você entende o cenário, as opções e o melhor caminho antes de decidir.</p>
+        <div class="skills-grid">
+          <div class="skills-group">
+            <h3 class="skills-title"><i data-lucide="layout-template"></i> Front-end</h3>
+
+            <div class="skills-icons">
+               <div class="tool"><i data-lucide="code"></i><span>HTML5 semântico</span></div>
+                <div class="tool"><i data-lucide="palette"></i><span>CSS moderno (Flex/Grid)</span></div>
+                <div class="tool"><i data-lucide="braces"></i><span>JavaScript</span></div>
+                <div class="tool"><i data-lucide="layout"></i><span>Layout responsivo</span></div>
+                <div class="tool"><i data-lucide="zap"></i><span>Consumo de API (fetch)</span></div>
+                <div class="tool"><i data-lucide="sparkles"></i><span>Noções de UI/UX</span></div>
+            </div>
+
+            <div class="chips">
+            <span class="chip">Formulários</span>
+            <span class="chip">Validação básica</span>
+            <span class="chip">Acessibilidade</span>
+            <span class="chip">Componentização simples</span>
+            </div>
           </div>
-          <div class="highlight reveal">
-            <h4>Estratégia e prevenção</h4>
-            <p>Menos risco hoje, menos dor de cabeça amanhã. Trabalhamos para evitar problemas.</p>
+
+          <div class="skills-group">
+            <h3 class="skills-title"><i data-lucide="server"></i> Back-end</h3>
+ 
+            <div class="skills-icons">
+              <div class="tool"><i data-lucide="cpu"></i><span>Node.js</span></div>
+              <div class="tool"><i data-lucide="network"></i><span>Express</span></div>
+              <div class="tool"><i data-lucide="coffee"></i><span>Java</span></div>
+              <div class="tool"><i data-lucide="server"></i><span>Spring Boot</span></div>
+              <div class="tool"><i data-lucide="database"></i><span>MySQL</span></div>
+              <div class="tool"><i data-lucide="box"></i><span>MongoDB</span></div>
+            </div>
+
+            <div class="chips">
+              <span class="chip">REST API</span>
+              <span class="chip">Validação</span>
+              <span class="chip">Arquitetura</span>
+            </div>
           </div>
-          <div class="highlight reveal">
-            <h4>Agilidade com método</h4>
-            <p>Processos organizados e comunicação direta para acelerar decisões.</p>
-          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-title"><i data-lucide="wrench"></i> Ferramentas</h3>
+
+              <div class="skills-icons">
+          <div class="tool"><i data-lucide="git-branch"></i><span>Git / GitHub</span></div>
+          <div class="tool"><i data-lucide="database"></i><span>MySQL / SQLite</span></div>
+          <div class="tool"><i data-lucide="server"></i><span>Postman / Insomnia</span></div>
+          <div class="tool"><i data-lucide="package"></i><span>Prisma ORM</span></div>
+          <div class="tool"><i data-lucide="shield-check"></i><span>JWT Auth</span></div>
+          <div class="tool"><i data-lucide="cloud"></i><span>Deploy (Render / Railway)</span></div>
         </div>
-      </div>
 
-      <div class="about-card reveal">
-        <div class="about-card__box">
-          <h3>Como funciona</h3>
-          <ol class="steps">
-            <li><strong>Você explica</strong> sua situação (online ou presencial).</li>
-            <li><strong>Nós analisamos</strong> documentos e contexto.</li>
-            <li><strong>Você recebe</strong> um plano de ação com próximos passos.</li>
-            <li><strong>Executamos</strong> a estratégia e acompanhamos cada etapa.</li>
-          </ol>
 
-          <div class="callout">
-            <p><strong>Transparência:</strong> você sempre sabe “o que”, “por quê” e “qual é o próximo passo”.</p>
+            <div class="chips">
+              <span class="chip">Commits claros</span>
+              <span class="chip">Organização</span>
+
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Serviços -->
-  <section class="section section--alt" id="servicos">
-  
-    <div class="container">
-       <div id="title-service">
-     <h2>Áreas de atuação</h2>
-        <p class="muted">
-          Atendimento focado em solução prática e estratégia. Se você não encontrou seu tema aqui, fale conosco.
-        </p>
-        </div>
-      
-      <div class="cards">
-        <article class="service reveal">
-          <h3>Direito Cível</h3>
-          <p>Contratos, cobranças, indenizações, responsabilidade civil, negociações e ações.</p>
-          <ul>
-            <li>Revisão e elaboração de contratos</li>
-            <li>Acordos e mediação</li>
-            <li>Ações de indenização</li>
-          </ul>
-        </article>
-
-        <article class="service reveal">
-          <h3>Direito Trabalhista</h3>
-          <p>Defesa de direitos e prevenção de riscos. Atendimento para pessoas e empresas.</p>
-          <ul>
-            <li>Verbas rescisórias e acordos</li>
-            <li>Consultoria preventiva</li>
-            <li>Defesas e acompanhamento processual</li>
-          </ul>
-        </article>
-
-        <article class="service reveal">
-          <h3>Família e Sucessões</h3>
-          <p>Atuação sensível e estratégica em momentos delicados, com discrição e clareza.</p>
-          <ul>
-            <li>Divórcio e partilha</li>
-            <li>Guarda e pensão</li>
-            <li>Inventário</li>
-          </ul>
-        </article>
-
-        <article class="service reveal">
-          <h3>Direito do Consumidor</h3>
-          <p>Proteção do seu direito com abordagem objetiva para resolver rápido.</p>
-          <ul>
-            <li>Cobranças indevidas</li>
-            <li>Produtos/serviços com defeito</li>
-            <li>Negativação e bancos</li>
-          </ul>
-        </article>
-
-        <article class="service reveal">
-          <h3>Empresarial</h3>
-          <p>Estruture e proteja sua empresa com documentos e decisões seguras.</p>
-          <ul>
-            <li>Contratos e parcerias</li>
-            <li>Consultoria jurídica recorrente</li>
-            <li>Prevenção de litígios</li>
-          </ul>
-        </article>
-
-        <article class="service reveal">
-          <h3>Consultoria & Compliance</h3>
-          <p>Políticas internas, adequações e suporte estratégico para reduzir riscos.</p>
-          <ul>
-            <li>Mapeamento de riscos</li>
-            <li>Políticas e procedimentos</li>
-            <li>Treinamentos</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="cta-strip reveal">
-        <div>
-          <h3>Quer um diagnóstico rápido do seu caso?</h3>
-          <p class="muted">Explique sua situação e receba direcionamento claro dos próximos passos.</p>
-        </div>
-        <a class="btn btn--primary" href="#contato">Solicitar avaliação</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Dúvidas (FAQ) -->
-  <section class="section" id="duvidas">
-    <div class="container">
-      <div class="section__head reveal">
-        <h2>Dúvidas frequentes</h2>
-        <p class="muted">Respostas diretas para você entender o caminho antes de decidir.</p>
-      </div>
-
-      <div class="faq">
-        <details class="faq__item reveal">
-          <summary class="faq__q">Como funciona a primeira avaliação?</summary>
-          <div class="faq__a">
-            Fazemos uma análise inicial do seu caso, entendemos objetivos e documentos essenciais e indicamos um plano de ação com próximos passos.
-          </div>
-        </details>
-
-        <details class="faq__item reveal">
-          <summary class="faq__q">O atendimento é online?</summary>
-          <div class="faq__a">
-            Sim. Atendemos online para todo o Brasil. Atendimento presencial pode ser agendado conforme disponibilidade.
-          </div>
-        </details>
-
-        <details class="faq__item reveal">
-          <summary class="faq__q">Quais documentos eu preciso enviar?</summary>
-          <div class="faq__a">
-            Depende do caso, mas normalmente pedimos contratos, comprovantes, conversas relevantes, notificações e documentos pessoais. Você recebe uma lista objetiva.
-          </div>
-        </details>
-
-        <details class="faq__item reveal">
-          <summary class="faq__q">Vocês informam riscos e prazos?</summary>
-          <div class="faq__a">
-            Sim. Você recebe uma visão clara de riscos, alternativas e prazos realistas para tomar decisão com segurança.
-          </div>
-        </details>
-
-        <details class="faq__item reveal">
-          <summary class="faq__q">Como é feito o orçamento?</summary>
-          <div class="faq__a">
-            Após entender o caso e a estratégia, apresentamos proposta transparente (escopo, etapas, prazos e valores).
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section class="section section--alt" id="contato">
-    <div class="container grid-2">
-      <div class="reveal">
-        <h2>Fale conosco</h2>
-        <p class="muted">
-          Conte rapidamente sua situação. Retornamos com orientação inicial e próximos passos.
-          <strong>Atendimento online</strong> para todo o Brasil e presencial sob agendamento.
-        </p>
-
-        <div class="contact-box">
-          <div class="contact-item">
-            <span class="label">WhatsApp</span>
-            <a class="value" href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">(00) 00000-0000</a>
-          </div>
-          <div class="contact-item">
-            <span class="label">E-mail</span>
-            <a class="value" href="mailto:contato@verticeadvocacia.com.br">contato@verticeadvocacia.com.br</a>
-          </div>
-          <div class="contact-item">
-            <span class="label">Endereço</span>
-            <span class="value">Sua cidade • Seu estado</span>
-          </div>
-
-          <p class="small muted">
-            * Este site tem finalidade informativa e não substitui uma consulta jurídica formal.
-          </p>
         </div>
       </div>
+    </section>
 
-      <div class="form-card reveal">
-        <form id="leadForm" novalidate>
-          <h3>Solicitar contato</h3>
+    <!-- PROJETOS -->
+    <section class="section" id="projects">
+      <div class="container section-content">
+        <div class="section-header center">
+          <span class="section-eyebrow">Portfólio</span>
+          <h2>Projetos em destaque</h2>
+          <p>Alguns projetos que demonstram minhas habilidades técnicas e meu cuidado com detalhes.</p>
+        </div>
 
-          <label>
-            Nome
-            <input type="text" name="nome" placeholder="Seu nome completo" required />
-          </label>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-tag">
+              <i data-lucide="layout"></i> Front-end
+            </div>
+            <h3>Landipage Tech Cloud</h3>
+            <p>Tech Cloud é uma startup de tecnologia focada no desenvolvimento de soluções digitais inteligentes para negócios modernos.</p>
+            <ul class="project-meta">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://tech-cloud-jrn.netlify.app/" class="btn small ghost" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="external-link"></i> Ver Online
+              </a>
+              <a href="https://github.com/JrnDevv/empresa-ficticia-site" class="btn small secondary" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </article>
 
-          <label>
-            Telefone / WhatsApp
-            <input type="tel" name="telefone" placeholder="(00) 00000-0000" required />
-          </label>
+          <article class="project-card">
+            <div class="project-tag">
+              <i data-lucide="boxes"></i> Full-stack
+            </div>
+            <h3>Landipage Advocacia</h3>
+            <p>Somos um escritório de advocacia moderno, focado em oferecer soluções jurídicas seguras, estratégicas e personalizadas para cada cliente.</p>
+            <ul class="project-meta">
+              <li>Html</li><li>Css</li><li>JavaScript</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://vertice-advocacia.netlify.app/" class="btn small ghost" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="book-open"></i> Ver Online
+              </a>
+              <a href="https://github.com/JrnDevv/landipage-advogacia" class="btn small secondary" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </article>
 
-          <label>
-            E-mail
-            <input type="email" name="email" placeholder="voce@email.com" required />
-          </label>
+          <article class="project-card">
+            <div class="project-tag">
+              <i data-lucide="rocket"></i> Estudo
+            </div>
+            <h3>Sistema para concessionária</h3>
+            <p>
+            Sistema web para apresentação de veículos e captação de contatos, com layout responsivo e interface moderna, desenvolvido como estudo prático de front-end e UI/UX.
+            </p>
+            <ul class="project-meta">
+              <li>HTML</li><li>CSS</li><li>JS</li><li>Java 17</li><li>Spring Boot</li><li>MySql</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="btn small ghost" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="globe"></i> Ver online
+              </a>
+              <a href="#" class="btn small secondary" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github"></i> GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <label>
-            Assunto
-            <select name="assunto" required>
-              <option value="" selected>Selecione</option>
-              <option>Direito Cível</option>
-              <option>Direito Trabalhista</option>
-              <option>Família e Sucessões</option>
-              <option>Direito do Consumidor</option>
-              <option>Empresarial</option>
-              <option>Consultoria & Compliance</option>
-              <option>Outro</option>
-            </select>
-          </label>
+    <!-- CONTATO -->
+    <section class="section" id="contact">
+      <div class="container section-content contact">
+        <div class="contact-info">
+          <span class="section-eyebrow">Contato</span>
+          <h2>Vamos conversar?</h2>
+          <p>Me chame para falar sobre vagas, parcerias ou projetos. Respondo o mais rápido possível.</p>
 
-          <label>
-            Mensagem
-            <textarea name="mensagem" rows="5" placeholder="Explique brevemente sua situação" required></textarea>
-          </label>
+          <ul class="contact-list">
+            <li><span>Email:</span> teenjrn@gmail.com</li>
+            <li><span>GitHub:</span> <a href="https://github.com/JrnDevv" target="_blank" rel="noopener noreferrer">github.com/JrnDevv</a></li>
+            <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/gabriel-souza-941b84335/" target="_blank" rel="noopener noreferrer">linkedin.com/in/gabriel-souza-941b84335</a></li>
+          </ul>
+        </div>
 
-          <button class="btn btn--primary btn--full" type="submit">Enviar</button>
+        <form class="contact-form" id="contact-form" autocomplete="on">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+          </div>
 
-          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" placeholder="Me conte sobre o projeto ou oportunidade..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary full-width">Enviar mensagem</button>
+          <p class="form-feedback" id="form-feedback"></p>
         </form>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer__content">
-      <div>
-        <div class="brand brand--footer">
-          <span class="brand__name">Vértice Advocacia</span>
-          <span class="brand__sub">Estratégia • Segurança • Resultado</span>
-        </div>
-        <p class="muted small">
-          Advocacia estratégica com foco em clareza, segurança jurídica e resultado.
-        </p>
-      </div>
-
-      <div class="footer__copy small muted">
-        <span>© <span id="year"></span> Vértice Advocacia. Todos os direitos reservados.</span>
-      </div>
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Gabriel Souza. Todos os direitos reservados.</p>
+      <p class="footer-secondary">Desenvolvido em HTML, CSS e JavaScript.</p>
     </div>
   </footer>
 
-  <!-- WhatsApp Floating -->
-  <a class="whatsapp" href="https://wa.me/5500000000000" target="_blank" rel="noreferrer" aria-label="Falar no WhatsApp">
-    WhatsApp
-  </a>
-
+  <!-- Scripts -->
   <script src="script.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
